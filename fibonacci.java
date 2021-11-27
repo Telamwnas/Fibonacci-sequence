@@ -1,39 +1,35 @@
 class fibonacci {
-  
-    static long fbsq(long n)
-    {
-  
-        long f[] = new long[(int) (n+2)];
-  
-        long i;
-  
-        f[0]=0;
-        f[1]=1;
-  
-        for (i=2; i <= n; i++) {
-  
-           f[(int) i] = f[(int) (i-1)] + f[(int) (i-2)];
-        }
-  
-       return f[(int) n];
-    }
-  
-    public static void
-    main(String args[])
-   
-    {
-        
-        long N=86;
-        
-        for (long i=0; i<N; i++)
-          
-            System.out.printf("\n"+(fbsq(i) + " "));
-           
 
+  static double fbsq(double n) {
 
-            
+    double f[] = new double[(int)(n + 2)];
+    double i;
+    f[0] = 0;
+    f[1] = 1;
+
+    for (i = 2; i <= n; i++) {
+
+      f[(int) i] = f[(int)(i - 1)] + f[(int)(i - 2)];
     }
+
+    return f[(int) n];
+  }
+
+  public static void
+  main(String args[])
+
+  {
+    System.out.print("------THE SEQUENSE IS------");
+
+    double N = 10;
+
+    for (double i = 0; i < N; i++)
+
+      System.out.printf("\n" + (fbsq(i) + " "));
+
+  }
 }
+
 
 //ΑΠΛΟ ΠΑΡΑΔΕΙΓΜΑ ΑΛΛΗΛΟΥΧΙΑΣ FIBONACCI
 
